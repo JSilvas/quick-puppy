@@ -2,4 +2,4 @@
 
 ## Time-boxed Build Challenge
 
-The site is built using only vanilla html, css, and a bit of jQuery to help with toggling the ham menu.
+The site is built using only vanilla html, css, and a bit of jQuery to help with toggling the ham menu. It is a fully mobile responsive as well.
