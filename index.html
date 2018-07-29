@@ -3,17 +3,146 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>PuPPy</title>
+  <title>PuPPy Pals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/nav.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/modules.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/ham.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster" rel="stylesheet" />
 </head>
 <body>
-  <h1>Hello World!</h1>
-  
+    <nav>
+      <img class="small-logo" src="https://placehold.it/50x50/444">
+      <div class="search">
+        <h2>PuPPy Community</h2>
+        <input type="search" placeholder="Search PuPPy" />
+      </div>
+      <button class="js-menu menu" type="button">
+        <span class="bar"></span>
+      </button>
+      <div class="ham">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="member.html">Members</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="wrapper">
+    <header>
+      <section class="feature-events">
+        <!-- <div class="arrow-left">
+          <img src="https://placehold.it/25x50/666">
+        </div> -->
+        <article>
+          <h1>Monthly Meetup @Moz</h1>
+          <p>So Python, much lightning, many talks</p>
+          <p>Eat bahn mi and talk about linear discriminant analysis.</p>
+          <a href="https://www.meetup.com/PSPPython/">
+	  				<button class="button-event" onclick="">
+	  					<span>Event Page</span>
+	  				</button>
+	  			</a>
+        </article>
+        <!-- <div class="arrow-right">
+          <img src="https://placehold.it/25x50/666">
+        </div> -->
+      </section>
+    </header>
+
+    <main>
+      <section class="column-left scroll">
+        <h3>Activity Feed</h3>
+        <div class="post-box">
+          <p>Type your message:</p>
+          <input type="text" placeholder="Don is always watching..." />
+          <input type="submit" />
+        </div>
+        <article>
+          <time></time>
+          <p>@theRealDon</p>
+          <p>Lorem ipsum dolor amet iPhone lorem man braid shoreditch minim chambray biodiesel humblebrag small batch in.</p>
+        </article>
+        <article>
+          <p>@defNotGuido</p>
+          <p>Nostrud health goth succulents in voluptate street art hella adaptogen selvage incididunt letterpress.</p>
+        </article>
+        <article>
+          <p>@notABot</p>
+          <p>Tacos tumblr kinfolk meh, et bespoke nulla chambray cred copper mug.</p>
+        </article>
+        <article>
+          <p>@theRealDon</p>
+          <p>Aute shaman kitsch ex food truck godard.</p>
+        </article>
+        <article>
+          <p>@pyWizard</p>
+          <p>Poutine incididunt single-origin coffee tofu, shabby chic hell of 8-bit ipsum quinoa.</p>
+        </article>
+        <article>
+          <p>@theRealDon</p>
+          <p>Disrupt microdosing poutine beard ut aliqua stumptown gochujang echo park chambray do.</p>
+        </article>
+        <article>
+          <p>@abitraryPy</p>
+          <p>Photo booth bushwick do irony you probably haven't heard of them ex normcore skateboard pariatur disrupt hell of.</p>
+        </article>
+        <article>
+          <p>@theRealDon</p>
+          <p>Pop-up nisi intelligentsia raw denim fingerstache small batch tumblr keffiyeh polaroid green juice leggings.</p>
+        </article>
+        <article>
+          <p>@notABot</p>
+          <p>Bushwick ex excepteur jean shorts ennui brunch iceland mlkshk culpa etsy narwhal.</p>
+        </article>  
+      </section>
+
+      <section class="column-right scroll">
+        <h3>Upcoming Events</h3>
+        <article>
+          <h5>Aug 8, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>
+        <article>
+          <h5>Aug 12, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>
+        <article>
+          <h5>Aug 21, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>
+        <article>
+          <h5>Aug 28, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>
+        <article>
+          <h5>Sept 2, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>
+        <article>
+          <h5>Sept 8, 2018</h5>
+          <p>Data Wrangling w/ Cobras</p>
+          <p>@facebook</p>
+        </article>  
+      </section>
+    </main>
+
+    <footer>
+      <h3>Copyright 2018 Jay Silvas</h3>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+		      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
-  <script src="scripts/nav.js"></script>
+  <script src="scripts/ham.js"></script>
+
 </body>
 </html>
