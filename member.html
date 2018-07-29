@@ -8,59 +8,72 @@
   <link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/nav.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/modules.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/ham.css" />
   <link href="https://fonts.googleapis.com/css?family=Cabin|Lobster" rel="stylesheet" />
 </head>
 <body>
   <nav>
-    <img class="small-logo" src="https://placehold.it/50x50/333">
-    <h2>PuPPy Community</h2>
+    <img class="small-logo" src="https://placehold.it/50x50/444">
     <div class="search">
+      <h2>PuPPy Community</h2>
       <input type="search" placeholder="Search PuPPy" />
     </div>
-    <img class="ham-menu" src="https://placehold.it/50x50/666">
+    <button class="js-menu menu" type="button">
+      <span class="bar"></span>
+    </button>
+    <div class="ham">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="member.html">Members</a></li>
+      </ul>
+    </div>
   </nav>
   
-  <header>
-    <section class="feature-profile">
-      <article>
-        <div class="profile-pic">
-          <img src="https://placehold.it/50x50/666">
-        </div>
-        <h2>@darkSorceress</h2>
-        <p>Python | Django | a bit o' lightning </p>
-      </article>
-    </section>
-  </header>
-  
-  <main>
-    <section class="member-bio">
-      <article>
-        <h4>Jenna Doe</h4>
-        <p>Lorem ipsum dolor amet iPhone lorem man braid shoreditch minim chambray biodiesel humblebrag small batch in. Nostrud health goth succulents in voluptate street art hella adaptogen selvage incididunt letterpress. Poutine incididunt single-origin coffee tofu, shabby chic hell of 8-bit ipsum quinoa.</p>
-      </article>
-    </section>
-    
-    <aside class="member-skills">
-      <section>
-        <h5>Skills</h5>
+  <div class="wrapper">
+    <header>
+      <section class="feature-profile">
+        <article>
+          <div class="profile-pic">
+            <img src="https://placehold.it/150x150/444">
+          </div>
+          <h2>@darkSorceress</h2>
+          <p>Python | Django | a bit o' lightning </p>
+        </article>
       </section>
-      <ul>
-        <li><p>Python</p></li>
-        <li><p>JavaScript</p></li>
-        <li><p>CSS3/SASS, Bulma</p></li>
-        <li><p>Django, Flask, Pyramid</p></li>
-        <li><p>Node.js</p></li>        
-        <li><p>Jenkins, TravisCI</p></li>
-      </ul>
-    </aside>
-  </main>
+    </header>
 
-  <footer>
-    <h3>Copyright 2018 Jay Silvas</h3>
-  </footer>
+    <main>
+      <section class="column-left">
+        <article>
+          <h4>Jenna Doe</h4>
+          <p>Lorem ipsum dolor amet iPhone lorem man braid shoreditch minim chambray biodiesel humblebrag small batch in. Nostrud health goth succulents in voluptate street art hella adaptogen selvage incididunt letterpress. Poutine incididunt single-origin coffee tofu, shabby chic hell of 8-bit ipsum quinoa.</p>
+        </article>
+      </section>
+
+      <section class="column-right">
+        <article>
+          <h5>Skills</h5>
+          <ul>
+            <li><p>Python</p></li>
+            <li><p>JavaScript</p></li>
+            <li><p>CSS3/SASS, Bulma</p></li>
+            <li><p>Django, Flask, Pyramid</p></li>
+            <li><p>Node.js</p></li>        
+            <li><p>Jenkins, TravisCI</p></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Copyright 2018 Jay Silvas</h3>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+		      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
-  <script src="scripts/nav.js"></script>
+  <script src="scripts/ham.js"></script>
 </body>
 </html>

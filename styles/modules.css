@@ -1,27 +1,19 @@
 /* Events featured in header */
-header.feature-event {
+.feature-event {
 
 }
-
-/* Profile featured in header */
-header.feature-profile {
-  
-}
-
-
-
 
 /* Event Us Button */
 .button-event {
   background:#c0392b;
   color: ghostwhite;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 5px;
   box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
   border: none;
-  margin: 4em 0 2em 0;
-  padding: 20px;
-  width: 200px;
+  margin: 25px 0 0 0;
+  padding: 15px;
+  width: 175px;
   transition: all 0.5s;
 }
 .button-event:hover {

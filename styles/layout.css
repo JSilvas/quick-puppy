@@ -1,0 +1,152 @@
+/* All page content except nav bar */
+.wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+nav {
+  background: linear-gradient(#888 90%, #777, #666);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1;
+}
+nav img.small-logo {
+  float: left;
+  margin: 10px;
+  border-radius: 5px;
+}
+nav img.ham-menu {
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header {
+  padding: 60px 0 0 0;
+  border: 2px solid #666;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+  margin-bottom: 15px;
+}
+
+/* Events featured in main page header */
+.feature-events {
+  background: rgba(75, 152, 224, 0.5);
+  text-align: left;
+  min-height: 70vh;
+  padding: 60px 30px;
+}
+.feature-events article {
+  padding: 5vh 5vw;
+}
+.feature-events article h1 {
+  margin: 25px 0;
+}
+.feature-events article p {
+  margin: 10px 0;
+}
+
+/* Profile featured in member page header */
+.feature-profile {
+  background: rgba(75, 152, 224, 0.5);
+  text-align: left;
+  min-height: 40vh;
+  padding: 60px 30px;
+}
+.profile-pic {
+  position: relative;
+  padding-bottom: 10px;
+}
+.profile-pic img {
+  border: 6px solid #666;
+  border-radius: 50%;
+}
+
+/* Main content columns */
+.column-left {
+  padding: 0 2vw; 
+  max-width: 100%;
+  float: left;
+}
+.column-right {
+  padding: 0 2vw;
+  display: inline-block;
+  width: 100%;
+}
+.column-left article, .column-right article {
+  background: rgba(75, 152, 224, 0.5);
+  border: 2px solid #666;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+  margin: 15px 0px;
+  padding: 10px 5px;
+  text-align: left;
+}
+
+footer {
+  padding: 10vh 2vw;
+  clear: both;
+  width: 100%;
+}
+
+@media (max-width: 599px) {
+  nav {
+    height: 60px;
+  }
+  nav img.small-logo {
+    margin: 5px;
+  }
+  nav div.search {
+    float: left;
+    padding: 0 10px;
+  }
+  nav h2 {
+    font-size: 1rem;
+    margin: 5px 0px;
+    min-width: 180px;
+  }
+  nav div.search input {
+    height: 25px;
+    border: 3px solid #666;
+    border-radius: 25px;
+  }
+  nav img.ham-menu {
+    margin: 5px;
+  }
+}
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+  nav div.search {
+    display: block;
+    float: left;
+    width: 76vw;
+    text-align: center;
+    padding: 17.5px 0;
+  }
+  nav div.search h2 {
+    font-size: 1.4rem;
+    float: left;
+  }
+  nav div.search input {
+    height: 35px;
+    border: 5px solid #666;
+    border-radius: 35px;
+    float: right;
+  }
+
+  .column-left {
+    width: 60vw; 
+    max-width: 800px;
+    float: left;
+  }
+  .column-right {
+    width: 35vw;
+    max-width: 400px;
+    display: inline-block;
+  }
+}
