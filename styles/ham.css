@@ -5,8 +5,8 @@
   background: 0;
   float: right;
   margin: 10px 10px 0 0;
-  height: 50px;
-  width: 50px;
+  height: 2.2rem;
+  width: 2.6rem;
   z-index: 3;
   outline: 0;
   padding: 0;
@@ -15,10 +15,11 @@
 .bar, .bar::before, .bar::after {
   transition: 0.2s; 
   background: linear 0.1s 0.2s;
+  border-radius: 5px;
   top: linear 0.2s 0.2s;
   transform: linear;
   position: absolute;
-  background: #c0392b;
+  background: #444;
   margin: auto;
   width: 100%;
   height: 5px;
@@ -30,10 +31,10 @@
   margin-top: -0.2rem;
 }
 .bar::before {
-  top: -1.2rem;
+  top: -0.9rem;
 }
 .bar::after {
-  top: 1.2rem;
+  top: 0.9rem;
 }
 .bar::before, .bar::after {
   transform: rotate(180deg);
